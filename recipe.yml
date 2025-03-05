@@ -58,9 +58,6 @@ stages:
       - kde-standard
       - sudo
       - gnome-tweaks
-      - broadcom-wl
-      - broadcom-dkms
-      - broadcom-wl-dkms
       - broadcom-sta-dkms
 
   - name: sudo-setup
