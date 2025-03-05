@@ -23,11 +23,11 @@ stages:
 
   # Put your custom actions below this comment
 
-  - name: add-repository
-    type: shell
-    commands:
-    - wget https://gandalfn.ovh/debian/pool/main/p/pantheon-debian-repos/pantheon-debian-repos_0.4-0+pantheon+stretch+loki1_all.deb
-    - sudo dpkg -i pantheon-debian-repos_0.4-0+pantheon+stretch+loki1_all.deb
+# - name: add-repository
+#   type: shell
+#   commands:
+#   - wget https://gandalfn.ovh/debian/pool/main/p/pantheon-debian-repos/pantheon-debian-repos_0.4-0+pantheon+stretch+loki1_all.deb
+#   - sudo dpkg -i pantheon-debian-repos_0.4-0+pantheon+stretch+loki1_all.deb
 
   - name: packages # Sample module using the built-in Apt module to install packages
     type: apt
@@ -36,16 +36,9 @@ stages:
       - vim
       - micro
       - git
-      - rclone
-      - python3-nautilus
-      - python3-cairo
-      - apt-transport-https
-      - software-properties-common
-      - pantheon
-      - elementary-tweaks
-      - indicator-application
-      - indicator-systemtray-unity
-      - indicator-multiload
+      - neofetch
+      - fish
+      - kde-standard
 
   - name: example-commands # Sample module demonstrating the Shell module with custom commands
     type: shell
