@@ -34,10 +34,10 @@ stages:
     type: shell
     commands:
       - git clone https://github.com/dylanaraps/neofetch
-      - pushd neofetch
+      - cd neofetch
       - make
       - make install
-      - popd
+      - cd ..
 #   - wget https://gandalfn.ovh/debian/pool/main/p/pantheon-debian-repos/pantheon-debian-repos_0.4-0+pantheon+stretch+loki1_all.deb
 #   - sudo dpkg -i pantheon-debian-repos_0.4-0+pantheon+stretch+loki1_all.deb
 
