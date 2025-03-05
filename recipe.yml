@@ -24,6 +24,12 @@ stages:
   # Put your custom actions below this comment
 
 #<<<<<<< HEAD
+  - name: installing-git-before-i-crash-out
+    type: apt
+    source:
+      packages:
+      - git
+
   - name: add-repository
     type: shell
     commands:
@@ -50,7 +56,6 @@ stages:
       - fish
       - kde-standard
       - sudo
-      - git
 
   - name: sudo-setup
     type: shell
