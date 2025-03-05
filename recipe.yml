@@ -24,11 +24,13 @@ stages:
   # Put your custom actions below this comment
 
 #<<<<<<< HEAD
-  - name: installing-git-before-i-crash-out
+  - name: installing-prerequisites-before-i-crash-out
     type: apt
     source:
       packages:
       - git
+      - gcc
+      - make
 
   - name: add-repository
     type: shell
