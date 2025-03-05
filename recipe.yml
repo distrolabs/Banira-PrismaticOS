@@ -24,14 +24,14 @@ stages:
   # Put your custom actions below this comment
 
 #<<<<<<< HEAD
- - name: add-repository
-   type: shell
-   commands:
-     - git clone https://github.com/dylanaraps/neofetch
-     - pushd neofetch
-     - make
-     - make install
-     - popd
+  - name: add-repository
+    type: shell
+    commands:
+      - git clone https://github.com/dylanaraps/neofetch
+      - pushd neofetch
+      - make
+      - make install
+      - popd
 #   - wget https://gandalfn.ovh/debian/pool/main/p/pantheon-debian-repos/pantheon-debian-repos_0.4-0+pantheon+stretch+loki1_all.deb
 #   - sudo dpkg -i pantheon-debian-repos_0.4-0+pantheon+stretch+loki1_all.deb
 
